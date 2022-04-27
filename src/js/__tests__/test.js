@@ -1,5 +1,4 @@
 import GameSavingLoader from '../GameSavingLoader';
-import read from '../reader';
 
 test('Получение корректных данных', async () => {
   const receivedValue = {
@@ -13,7 +12,7 @@ test('Получение корректных данных', async () => {
     },
   };
   const response = await GameSavingLoader.load();
-  expect(response).toBe(receivedValue);
+  expect(response).toEqual(receivedValue);
 });
 
 test('Возращает ошибку', async () => {
