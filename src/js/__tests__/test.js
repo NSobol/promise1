@@ -20,6 +20,6 @@ test('Возращает ошибку', async () => {
   try {
     await GameSavingLoader.load();
   } catch (err) {
-    expect(err).toBe('Error parsing data');
+    expect(err).toBe('Ошибка чтения данных');
   }
 });
