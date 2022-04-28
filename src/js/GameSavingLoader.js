@@ -7,6 +7,5 @@ export default class GameSavingLoader {
     return reader()
       .then((response) => json(response))
       .then((value) => new GameSaving(value))
-      .catch((err) => new Error('Ошибка чтения данных'));
   }
 }
